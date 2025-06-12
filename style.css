@@ -1,0 +1,97 @@
+body{
+    background-color: #0a0a0a;
+    color: #33ff33;
+    font-family: 'Courier New', Courier, monospace;
+    line-height: 1.6;
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 20px; 
+    border: 2px solid #222;
+    box-shadow: 0 0 20px rgba(0, 255,0,0.3);
+}
+
+h1, h2 {
+    color: #00ff99; 
+    font-weight: bold; 
+    text-transform: uppercase; /* makes all letters capital */
+    border-bottom: 1px dashed #00ff99; /* adds dashed line under headers */
+    padding-bottom: 5px;
+    margin-bottom: 20px;
+    letter-spacing: 1px; 
+}
+
+a {
+    color: #66ffff; /* link is bright blue cyan color! */
+    text-decoration: none; /* removed default underline */
+    border-bottom: 1px dotted #66ffff; /* adds dotted underline */
+    transition: all 0.3s ease;
+}
+
+a:hover {
+    color: #ff0066; /*hot pink when hovered*/
+    border-bottom-color: #ff0066; /*underline also turns pink*/
+    background-color: #111; /*slightly lighter background behind text */
+}
+
+/* code blocks */
+pre, code {
+    background-color: #111; /* darker block behind code */
+    color: #33ff33; /* neon green text */
+    padding: 10px; 
+    border-left: 3px solid #00ff99; /* glowing green vertical bar to the left */
+    font-size: 0.95rem; 
+    overflow-x: auto; /* allows scrolling is the code is too wide */
+}
+
+/* buttons */
+button {
+    background-color: #111;
+    color: #33ff33; /* green text */
+    border: 2px solid #33ff33; /* solid green border */
+    padding: 8px 16px; /* button size spacing */
+    font-family: 'Courier New', monospace; 
+    font-weight: bold; 
+    cursor: pointer; /* changes the mouse to pointer hand on hover */
+    transition: background-color 0.3s ease; /* smooth color change when hovered */
+}
+
+button:hover {
+    background-color: #33ff33; /* green background on hover */
+    color: #000; /* black text when hovered */
+}
+
+/* A styled "mystery message" box */
+.message-box {
+  background-color: #111;            /* slightly lighter black */
+  border: 2px dashed #666;           /* gray dashed border, like a message bubble */
+  padding: 20px;
+  margin-top: 20px;
+  font-style: italic;                /* makes it look like whispered/special message */
+  color: #99ffcc;                    /* soft pastel green text */
+  box-shadow: 0 0 10px rgba(102, 255, 204, 0.3); /* soft teal glow around it */
+}
+
+/* Flickering effect like old CRT monitors */
+@keyframes flicker {
+  0% { opacity: 1; }
+  48% { opacity: 0.8; }
+  50% { opacity: 0.4; }
+  52% { opacity: 0.9; }
+  100% { opacity: 1; }
+}
+
+.flicker {
+  animation: flicker 2.5s infinite; /* apply flicker to anything mysterious */
+  color: #99ffcc;                   /* light green text */
+}
+
+
+/* Blinking underscore like a terminal prompt */
+@keyframes blink {
+  50% { opacity: 0; }
+}
+
+.cursor::after {
+  content: "_";                      /* adds a blinking underscore after the element */
+  animation: blink 1s step-start infinite;
+}
