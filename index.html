@@ -2,6 +2,7 @@
 <html lang="en">
   <head>
     <script type="module" src="https://cdn.jsdelivr.net/npm/@google/model-viewer/dist/model-viewer.min.js"></script>
+    <script src="notepad.js"></script>
 
     <link rel="stylesheet" href="style.css">
     <meta charset="UTF-8" />
@@ -16,6 +17,14 @@
         <li><a href = "posts/entry1.html">June 12, 2025- launch day!</a></li>
         <li><a href = "calculator.html" >Calculator</a></li>
     </ul>
+
+    <section id="notepadSection">
+      <h2>scratchPad</h2>
+      <textarea id="notepad" rows="10" cols="50" placeholder ="write your notes here..."></textarea>
+      <button id="saveButton">Save Note</button>
+      <p id="status"></p>
+    </section>
+
     <model-viewer src="models/star.glb" alt="My Blender Star Model" auto-rotate camera-controls style="width: 600px; height: 400px;"></model-viewer>
     <p><a href="3dmodel.html">View my Blender 3D model</a></p>
 
