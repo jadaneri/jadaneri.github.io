@@ -8,14 +8,14 @@ body{
     margin: 40px auto;
     padding: 20px; 
     border: 2px solid #222;
-    box-shadow: 0 0 20px rgba(0, 255,0,0.3);
+    /*box-shadow: 0 0 20px rgba(0, 255,0,0.3);*/
 }
 
 h1, h2 {
     color: #000000; 
     font-weight: bold; 
     text-transform: uppercase; /* makes all letters capital */
-    border-bottom: 1px dashed #00ff99; /* adds dashed line under headers */
+    /*border-bottom: 1px dashed #00ff99; git adds dashed line under headers */
     padding-bottom: 5px;
     margin-bottom: 20px;
     letter-spacing: 1px; 
@@ -48,14 +48,14 @@ button {
     color: #000000; /* black text */
     border: 2px solid #000000; /* black border */
     padding: 8px 16px; /* button size spacing */
-    font-family: 'Courier New', monospace; 
+    font-family: Arial, Helvetica, sans-serif, Courier, monospace; 
     font-weight: bold; 
     cursor: pointer; /* changes the mouse to pointer hand on hover */
     transition: background-color 0.3s ease; /* smooth color change when hovered */
 }
 
 button:hover {
-    background-color: #33ff33; /* green background on hover */
+    background-color: #1458b6; /* green background on hover */
     color: #000; /* black text when hovered */
 }
 
