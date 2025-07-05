@@ -12,7 +12,7 @@ body{
 }
 
 h1, h2 {
-    color: #00ff99; 
+    color: #000000; 
     font-weight: bold; 
     text-transform: uppercase; /* makes all letters capital */
     border-bottom: 1px dashed #00ff99; /* adds dashed line under headers */
@@ -22,16 +22,15 @@ h1, h2 {
 }
 
 a {
-    color: #66ffff; /* link is bright blue cyan color! */
-    text-decoration: none; /* removed default underline */
+    color: #2980b9 ; /* link is blue */
     border-bottom: 1px dotted #66ffff; /* adds dotted underline */
     transition: all 0.3s ease;
 }
 
 a:hover {
-    color: #ff0066; /*hot pink when hovered*/
-    border-bottom-color: #ff0066; /*underline also turns pink*/
-    background-color: #111; /*slightly lighter background behind text */
+    color: #f0f0f0; /*white when hovered*/
+    border-bottom-color: #f0f0f0; /*underline also turns while*/
+    background-color: #2980b9; 
 }
 
 /* code blocks */
