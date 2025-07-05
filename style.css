@@ -22,15 +22,14 @@ h1, h2 {
 }
 
 a {
-    color: #2980b9 ; /* link is blue */
-    border-bottom: 1px dotted #66ffff; /* adds dotted underline */
+    color: #1458b6  ; /* link is blue */
     transition: all 0.3s ease;
 }
 
 a:hover {
     color: #f0f0f0; /*white when hovered*/
     border-bottom-color: #f0f0f0; /*underline also turns while*/
-    background-color: #2980b9; 
+    background-color: #1458b6 ; 
 }
 
 /* code blocks */
@@ -45,9 +44,9 @@ pre, code {
 
 /* buttons */
 button {
-    background-color: #111;
-    color: #33ff33; /* green text */
-    border: 2px solid #33ff33; /* solid green border */
+    background-color: #bfbdb6; /*grey background*/
+    color: #000000; /* black text */
+    border: 2px solid #000000; /* black border */
     padding: 8px 16px; /* button size spacing */
     font-family: 'Courier New', monospace; 
     font-weight: bold; 
